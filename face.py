@@ -35,6 +35,9 @@ Archi_encoding = face_recognition.face_encodings(Archi_image)[0]
 diya_image = face_recognition.load_image_file("E:\\SIH\\Facial_rec\\photo\\diya.jpg")
 diya_encoding = face_recognition.face_encodings(diya_image)[0]
 
+Bhavya_image = face_recognition.load_image_file("E:\\SIH\\Facial_rec\\photo\\Bhavya.jpg")
+Bhavya_encoding = face_recognition.face_encodings(Bhavya_image)[0]
+
 known_face_encoding = [
     jobs_encoding,
     ratan_tata_encoding,
@@ -44,7 +47,8 @@ known_face_encoding = [
     Ayush_encoding,
     Ansh_encoding,
     Archi_encoding,
-    diya_encoding
+    diya_encoding,
+    Bhavya_encoding
 ]
 
 known_face_names = [
@@ -56,7 +60,8 @@ known_face_names = [
     "Ayush",
     "Ansh",
     "Archisman",
-    "Diya"
+    "Diya",
+    "Bhavya"
 ]
 
 students = known_face_names.copy()
